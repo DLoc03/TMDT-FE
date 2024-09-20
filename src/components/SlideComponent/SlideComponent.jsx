@@ -11,6 +11,11 @@ const SlideComponent = ({arrSlide}) => {
         slidesToScroll: 1,
         autoplay: true,        
         autoplaySpeed: 2000,
+        beforeChange: (current, next) => {
+            document.querySelectorAll('.slick-slide').forEach(slide => {
+              slide.style.transition = 'transform 0.6s ease-in-out';
+            });
+          }
       };
   return (
     <Slider {...settings}>

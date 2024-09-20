@@ -5,6 +5,8 @@ import { Input } from 'antd';
 import { UserOutlined, ShoppingCartOutlined } from '@ant-design/icons';
 import ButtonInputSearch from "../ButtonInputSearch/ButtonInputSearch"
 import { useNavigate } from 'react-router-dom';
+import Logo from "../.././assets/images/logo1.png"
+import {Image} from "antd"
 
 const Header = () => {
     const { Search } = Input;
@@ -12,10 +14,15 @@ const Header = () => {
     const handleNavigateLogin = () => {
         navigate('/sign-in')
     }
+    const handleNavigateHome = () => {
+        navigate('/')
+    }
     return (
         <WrapperHeader>
-            <Col span={5}><WrapperTextHeader>
-                LOGO</WrapperTextHeader></Col>
+            <Col span={5}>
+                <WrapperTextHeader onClick={handleNavigateHome}>
+                    <Image src={Logo} alt='logo' preview={false}/>
+                </WrapperTextHeader></Col>
             <Col span={12}>
             <ButtonInputSearch
                 size = 'large' placeholder = 'Tìm kiếm sản phẩm ở đây' textButton = 'Tìm kiếm'

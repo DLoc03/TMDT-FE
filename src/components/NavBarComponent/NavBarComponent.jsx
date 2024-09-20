@@ -28,7 +28,7 @@ const NavBarComponent = () => {
                         return (
                             <div style={{display: 'flex', gap: '6px', alignItems: 'center'}}>
                                 <Rate disabled defaultValue={option} />
-                                <span>{`Từ ${option} sao`}</span>
+                                <span style={{fontSize: '14px'}}>{`Từ ${option} sao`}</span>
                             </div>
                         )
                     })
@@ -51,8 +51,10 @@ const NavBarComponent = () => {
         </WrapperContent>
         <WrapperContent>
             {renderContent('checkbox', [
-                 { value: 'a', label: 'A' },
-                 {value: 'b', label: 'B'}
+                 { value: 'dalat', label: 'TP. Đà Lạt' },
+                 {value: 'bmt', label: 'TP. Buôn Ma Thuột'},
+                 {value: 'hcm', label: 'TP. Hồ Chí Minh'},
+                 {value: 'dnang', label: 'TP. Đà Nẵng'},
             ])}
         </WrapperContent>
         <WrapperContent>

@@ -31,7 +31,7 @@ const ProductDetailComponent = () => {
                 </div>
                 <WrapperPriceProduct>
                     <WrapperTextPriceProduct>
-                        1.000.000
+                        18.000
                     </WrapperTextPriceProduct>
                 </WrapperPriceProduct>
                 <div>
@@ -47,7 +47,7 @@ const ProductDetailComponent = () => {
                     <div style={{fontSize: '16px', marginTop: '12px', marginBottom: '6px', fontWeight: '500'}}>Số lượng</div>
                     <WrapperQualityProduct>
                         <Button><PlusOutlined  /></Button>
-                        <WrapperInputNumber min={1} max={100000} defaultValue={3} onChange={onChange} />
+                        <WrapperInputNumber min={1} max={100000} defaultValue={1} onChange={onChange} />
                         <Button><MinusOutlined /></Button>
                     </WrapperQualityProduct>
                 </div>

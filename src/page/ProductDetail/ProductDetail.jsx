@@ -8,7 +8,7 @@ const ProductDetail = () => {
         navigate('/')
     }
   return (
-    <div style={{padding: '0 120px', backgroundColor: "#efefef", height: '1000px'}}>
+    <div style={{padding: '0 120px', backgroundColor: "#efefef", paddingBottom: '120px'}}>
       <div style={{cursor: 'pointer', padding: '20px 0', fontWeight: '500', textDecoration: 'underline'}} onClick={handleNavigateHome}>
         <span>Trang chủ</span>
       </div>

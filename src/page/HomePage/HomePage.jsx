@@ -2,9 +2,10 @@ import React from "react";
 import TypeProduct from "../../components/TypeProduct/TypeProduct";
 import {WrapperTypeProduct} from "./style"
 import SlideComponent from "../../components/SlideComponent/SlideComponent";
-import slide1 from "../.././assets/images/slide 1.jpg"
-import slide2 from "../.././assets/images/slide 2.png"
-import slide3 from "../.././assets/images/slide 3.png"
+import slide1 from "../.././assets/images/slide1.png"
+import slide2 from "../.././assets/images/slide2.png"
+import slide3 from "../.././assets/images/slide3.png"
+import slide4 from "../.././assets/images/slide4.png"
 import CardComponent from "../../components/CardComponent/CardComponent";
 import NavBarComponent from "../../components/NavBarComponent/NavBarComponent";
 import { Button } from 'antd';
@@ -15,7 +16,7 @@ const HomePage = () => {
     const handleNavigateProductType= () => {
         navigate('/type')
     }
-    const arrType = ['Điện tử', 'Mỹ phẩm', 'Thực phẩm', 'Dược phẩm', 'Đời sống', 'Quần áo']
+    const arrType = ['Điện tử', 'Mỹ phẩm', 'Thực phẩm', 'Dược phẩm', 'Đời sống', 'Quần áo', 'Mẹ và bé', 'Thú cưng', 'Đồ chơi', 'Thời trang']
     return (
         <>
             <div style={{padding:'0 120px'}}>
@@ -30,7 +31,7 @@ const HomePage = () => {
             </WrapperTypeProduct>
             </div>
             <div className="container" style={{backgroundColor: "#efefef", padding: "0 120px", height: '1000px'}}>            
-                <SlideComponent arrSlide={[slide1, slide2, slide3]}/>
+                <SlideComponent arrSlide={[slide1, slide2, slide3, slide4]}/>
                 <div style={{display: 'flex', marginTop: '48px'}}>
                     <div style={{flex: '2'}}>
                         <NavBarComponent/>
